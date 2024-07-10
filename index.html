@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador OP</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
     <div class="container">
         <div class="encriptador">
-            <textarea name="textoEncriptador" class="textoEncriptador" id="textoEncriptador" cols="50" rows="20"
-                placeholder="Ingrese el texto deseado"></textarea>
+            <textarea class="textoEncriptador" id="textoEncriptador" placeholder="Ingrese el texto deseado"></textarea>
             <div class="regla">
-                <p>Solo letras minúsculas y sin acentos.</p>
-            </div>
-            <div class="botones">
-                <button type="button" class="botonEncriptar" onclick="encriptarTexto()">Encriptar texto</button>
-                <input type="button" class="botonDesencriptar" value="Desencriptar texto"
-                    onclick="desencriptarTexto()" />
+                <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos.</p>
+                <div class="botones">
+                    <button type="button" class="botonEncriptar">Encriptar</button>
+                    <button type="button" class="botonDesencriptar">Desencriptar</button>
+                </div>
             </div>
         </div>
         <div class="encriptado">
-            <img src="assets/img/npc-con-lupa.png" alt="" id="npcLupa">
+            <img src="assets/img/npc-con-lupa.png" alt="" id="npc">
             <div class="textoEncriptado" id="textoEncriptado">
                 <h2 id="tituloMensaje">No se encontró ningún mensaje</h2>
                 <p id="parrafo">Ingrese el texto que desea encriptar o desencriptar.</p>
-                <!-- <textarea name="texto_encriptado" id="texto_encriptado" cols="50" rows="20"></textarea> -->
             </div>
         </div>
     </div>

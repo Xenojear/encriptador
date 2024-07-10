@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,6 +27,8 @@ body {
     font-size: 2rem;
     line-height: 150%;
     background-color: cornsilk;
+    resize: none;
+    outline: none;
 }
 
 .textoEncriptador::placeholder {
@@ -66,8 +68,8 @@ body {
     align-items: flex-start;
     padding: 1% 0;
     position: absolute;
-    width: 80%;
-    left: 10%;
+    gap: 20px;
+    width: 75%;
     top: 75%;
 }
 
@@ -75,10 +77,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2%;
-    gap: 8px;
     width: 25%;
     background-color: rgb(201, 131, 46);
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: "Inter";
     font-size: 1.15rem;
     line-height: 5px;
@@ -104,7 +105,7 @@ body {
     width: 25%;
     background: white;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: "Inter";
     font-weight: 400;
     font-size: 1.15rem;
@@ -118,6 +119,21 @@ body {
     width: 24%;
     padding: 1.8%;
     font-size: 1rem;
+}
+
+.botonCopiar {
+    width: 35%;
+    line-height: 250%;
+    background: white;
+    border: 2px solid black;
+    margin: 20px 0;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.botonCopiar:hover {
+    width: 33%;
+    font-size: 0.90rem;
 }
 
 .encriptado {
@@ -149,7 +165,7 @@ body {
 }
 
 .textoEncriptado h2 {
-    width: 60%;
+    width: 85%;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 120%;
@@ -165,11 +181,23 @@ body {
     color: rgb(85, 85, 85);
 }
 
+.resultado {
+    width: 90%;
+    border: none;
+    height: 10vw;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 150%;
+    color: rgb(85, 85, 85);
+    resize: none;
+    outline: none;
+}
+
 .encriptado img {
     position: absolute;
-    width: 60%;
-    height: 40%;
-    top: 8%;
+    width: 75%;
+    height: 45%;
+    top: 5%;
 }
 
 @media (max-width: 57.5em) {
@@ -223,7 +251,7 @@ body {
         width: 77%;
         height: 20%;
         left: 10%;
-        top: 77%;
+        top: 73%;
     }
 
     .encriptado img {
@@ -244,6 +272,12 @@ body {
 
     .textoEncriptado p {
         width: 75%;
+        font-size: 1rem;
+    }
+
+    .resultado {
+        width: 120%;
+        line-height: 120%;
         font-size: 1rem;
     }
 }
